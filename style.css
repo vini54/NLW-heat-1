@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* reset */
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Roboto', sans-serif;
+}
+html,
+body {
+  height: 100%;
+  --gray: hsl(240, 9%, 89%);
+}
+
+body {
+  display: flex;
+
+  background: url(./images/Desktop.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #121214;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+a {
+  color: var(--gray);
+  text-decoration: none;
+}
+img{
+   width: 25%;
+   display: block;
+}
+ul{
+   list-style: none;
+}
+main{
+   width: 375px;
+   min-height: 712px;
+   margin: auto;
+   background: url(./images/background.svg);
+   background-position: center;
+   background-size: cover;
+   color: var(--gray);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+main .content{
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 40px;
+}
+.content-imgs_avatar{
+   position: relative;
+}
+.selo-pic{
+   width: 80px;
+   position: absolute;
+   top: -15px;
+   z-index: 2;
+}
+.profile-pic{
+   width: 160px;
+   clip-path: polygon(50% 0, 100% 20%, 100% 80%, 50% 100%, 0 80%, 0 20%);
+}
+.content h1{
+   text-align: center;
+}
+.name{
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+.name a{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 5px;
+}
+.name a img{
+   width: 16px;
+   color: #000;
+}
+.content ul{
+   display: flex;
+   justify-content: center;
+   gap: 10px;
+}
+.content ul li{
+   display: flex;
+   align-items: center;
+   background-color: #323238;
+   font-size: 24px;
+   padding: 10px;
+}
+.content ul li a{
+   color: #fff;
+   display: flex;
+}
+@media screen and (min-width: 1024px){
+   .faixa{
+      width: 64px;
+      height: 150px;
+      background: linear-gradient(130deg, #FF008E, #FFCD1E);
+      position: absolute;
+      left: calc(50% - 32px);
+      z-index: 3;
+   }
+   .quebra{
+      width: 80px;
+      height: 8px;
+      background-color: #121214;
+      position: absolute;
+      left: calc(50% - 40px);
+      top: 146px;
+      z-index: 2;
+   }
+   main{
+      margin-top: 130px;
+      min-height: 0;
+      height: 540px;
+   }
+}
