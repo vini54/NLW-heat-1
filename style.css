@@ -88,6 +88,9 @@ main .content{
    width: 16px;
    color: #000;
 }
+#bio {
+   text-align: center;
+}
 .content ul{
    display: flex;
    justify-content: center;
