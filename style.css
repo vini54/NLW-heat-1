@@ -103,6 +103,9 @@ main .content{
    font-size: 24px;
    padding: 10px;
 }
+.content ul li img{
+   width: 24px;
+}
 .content ul li a{
    color: #fff;
    display: flex;
